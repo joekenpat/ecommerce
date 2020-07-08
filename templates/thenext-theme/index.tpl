@@ -4,9 +4,9 @@
         <div class="row">
             <div class="col-md-12">
                 <div class="banner-headline">
-                    <h5><strong>{LANG_HOME_BANNER_HEADING}</strong>
+                    <h3><strong>{LANG_HOME_BANNER_HEADING}</strong>
                         <br>
-                        <span>{LANG_HOME_BANNER_TAGLINE}</span></h5>
+                        {LANG_HOME_BANNER_TAGLINE}</h3>
                 </div>
             </div>
         </div>

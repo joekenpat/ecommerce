@@ -7583,7 +7583,7 @@ input:checked + .switch-button:before {
     padding: 25px;
     border-radius: 0;
     transition: .35s;
-    background-color: whitesmoke;
+    background: whitesmoke !important;
 
 }
 
