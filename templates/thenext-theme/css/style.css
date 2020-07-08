@@ -7051,7 +7051,7 @@ input:checked + .switch-button:before {
 .banner-headline h5{
     font-size: 15px; 
     color: #eee; 
-    line-height: 42px
+    line-height: 42px;
     font-weight: 300;
 }
 .banner-headline h1, .banner-headline h2, .banner-headline h4 {

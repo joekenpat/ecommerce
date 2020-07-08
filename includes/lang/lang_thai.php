@@ -1,6 +1,8 @@
 <?php
 $lang['ABNORMALBID'] = 'โฆษณาที่ไม่ได้ลงรายการบัญชีที่ต้องประมูลผิดปกติ';
 $lang['ABOUT_US'] = 'เกี่ยวกับเรา';
+$lang['SUBMIT_CV'] = 'ส่งประวัติย่อ';
+$lang['DOCUMENTARY'] = 'สารคดี';
 $lang['LEGAL'] = 'ถูกกฎหมาย';
 $lang['T&C'] = 'ข้อตกลงและเงื่อนไข';
 $lang['FARMERS_CLUB'] = 'ชมรมเกษตรกร';
@@ -211,7 +213,7 @@ $lang['HOME'] = 'บ้าน';
 $lang['HOME_IMAGE'] = 'บ้านที่มีภาพ';
 $lang['HOME_MAP'] = 'บ้านที่มีแผนที่';
 $lang['HOME_BANNER_HEADING'] = 'ซื้อและขาย';
-$lang['HOME_BANNER_TAGLINE'] = 'ค้นหารายชื่อพันทั้งหมดจากที่เดียว';
+$lang['HOME_BANNER_TAGLINE'] = 'ค้นหาสินค้าเกษตรและผลิตภัณฑ์พันธมิตรหลายพันรายการทั้งหมดในที่เดียว';
 $lang['HOW_IT_WORK'] = 'วิธีการทำงาน';
 $lang['HOW_SELL_QUICK'] = 'ขายได้เร็ว';
 $lang['HOW_WOULD_RATE'] = 'คุณจะให้คะแนนสินค้านี้อย่างไร?';

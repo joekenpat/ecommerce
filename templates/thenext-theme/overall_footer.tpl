@@ -33,6 +33,8 @@
                             <li><a href="https://bellefu.com/about_us/">{LANG_T&C}</a></li>
                             <li><a href="{LINK_FEEDBACK}">{LANG_FEEDBACK}</a></li>
                             <li><a href="{LINK_CONTACT}">{LANG_CONTACT}</a></li>
+                            <li><a href="#">{LANG_SUBMIT_CV}</a></li>
+                            <li><a href="#">{LANG_DOCUMENTARY}</a></li>
                         </ul>
                     </div>
                 </div>

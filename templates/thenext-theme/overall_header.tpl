@@ -160,8 +160,6 @@
                     <!-- Mobile Navigation -->
                     <nav class="mmenu-init" >
                         <ul class="mm-listview">
-                            <li><a href="#" >Submit CV</a></li>
-                            <li><a href="#" >Documentary</a></li>
                             IF({LOGGED_IN}){
                             <li><a href="{LINK_DASHBOARD}">{LANG_DASHBOARD}</a></li>
                             <li><a href="{LINK_MYADS}">{LANG_MY_ADS}</a></li>
