@@ -30,7 +30,6 @@
                     <div class="footer-links">
                         <h3>{LANG_HELP_SUPPORT}</h3>
                         <ul>
-                            <li><a href="https://bellefu.com/about_us/">{LANG_T&C}</a></li>
                             <li><a href="{LINK_FEEDBACK}">{LANG_FEEDBACK}</a></li>
                             <li><a href="{LINK_CONTACT}">{LANG_CONTACT}</a></li>
                             <li><a href="#">{LANG_SUBMIT_CV}</a></li>
@@ -42,6 +41,7 @@
                     <div class="footer-links">
                         <h3>{LANG_INFORMATION}</h3>
                         <ul>
+                            <li><a href="https://bellefu.com/about_us/">{LANG_ABOUT_US}</a></li>
                             {LOOP: HTMLPAGE}
                             <li><a href="{HTMLPAGE.link}">{HTMLPAGE.title}</a></li>
                             {/LOOP: HTMLPAGE}
@@ -50,6 +50,8 @@
                             {:IF}
                             <li><a href="{LINK_SITEMAP}">{LANG_SITE_MAP}</a></li>
                             <li><a href="https://bellefu.com/legal/">{LANG_LEGAL}</a></li>
+                            <li><a href="https://bellefu.com/privacy_policy/">{LANG_PRIVACY_POLICY}</a></li>
+
                         </ul>
                     </div>
                 </div>

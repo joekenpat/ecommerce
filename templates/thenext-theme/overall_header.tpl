@@ -148,12 +148,6 @@
                                 </a>
                             </li>
                             {:IF}
-                            <li class="d-none d-lg-block">
-                                <a href="#" style="color:white">Submit CV</a>
-                            </li>
-                             <li class="d-none d-lg-block">
-                                <a href="#" style="color:white">Documentary</a>
-                            </li>
                         </ul>
                     </nav>
                     <div class="clearfix"></div>

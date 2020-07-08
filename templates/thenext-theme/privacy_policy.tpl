@@ -1,11 +1,9 @@
 {OVERALL_HEADER}
-<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
-        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
 <div class="container">
-        <div class="pt-5 col-12">
+        <div class="col-12" style="padding-top:10px;">
             <h3 class="text-center" style="color:#FFA500"><u>BELLEFU PRIVACY POLICY</u> </h3>
         </div>
-        <div class="pt-5" style="max-width: 600px; margin: auto;text-align: justify;">
+        <div style="max-width:600px;margin:auto;text-align:justify;padding-top:10px;">
             <h5><b>Privacy Policy Scope</b></h5>
             <p>
                 This Privacy Policy identifies and describes the way Bellefu uses and protects the information we
