@@ -1,9 +1,9 @@
 {OVERALL_HEADER}
 <div class="container">
-        <div class="col-12" style="padding-top:10px">
+        <div class="col-12" style="padding-top:30px">
             <h3 class="text-center" style="color:#FFA500"><u>{LANG_DISCLAIMER}</u> </h3>
         </div>
-        <div style="max-width:600px;margin:auto;padding-top:10px;text-align:justify;">
+        <div style="max-width:600px;margin:auto;padding-top:30px;text-align:justify;">
             <p>
                 The Bellefu Agro Market Place, will not accept loss,
                 damage or inconvenience arising from any loss , damage

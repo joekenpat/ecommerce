@@ -6,7 +6,7 @@
                 <div class="banner-headline">
                     <h5><strong>{LANG_HOME_BANNER_HEADING}</strong>
                         <br>
-                        <!--<span>{LANG_HOME_BANNER_TAGLINE}</span>--></h5>
+                        <span>{LANG_HOME_BANNER_TAGLINE}</span></h5>
                 </div>
             </div>
         </div>

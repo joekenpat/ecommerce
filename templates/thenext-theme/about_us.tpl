@@ -1,9 +1,9 @@
 {OVERALL_HEADER}
 <div class="container">
-    <div class="col-12" style="padding-top:10px;">
+    <div class="col-12" style="padding-top:30px;">
         <h3 class="text-center" style="color:#FFA500"><u>{LANG_ABOUT_US}</u> </h3>
     </div>
-    <div style="max-width:600px;margin:auto;text-align:center;padding-top:10px;">
+    <div style="max-width:600px;margin:auto;text-align:center;padding-top:30px;">
         <p>
             Bellefu.com is a dynamic online marketplace dedicated to Agriculture related activities ensuring
             farmers,buyers and sellers of agricultural products have direct contact with other Agro-Allied providers and

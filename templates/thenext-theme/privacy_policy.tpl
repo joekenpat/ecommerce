@@ -1,9 +1,9 @@
 {OVERALL_HEADER}
 <div class="container">
-        <div class="col-12" style="padding-top:10px;">
+        <div class="col-12" style="padding-top:30px;">
             <h3 class="text-center" style="color:#FFA500"><u>BELLEFU PRIVACY POLICY</u> </h3>
         </div>
-        <div style="max-width:600px;margin:auto;text-align:justify;padding-top:10px;">
+        <div style="max-width:600px;margin:auto;text-align:center;padding-top:30px;">
             <h5><b>Privacy Policy Scope</b></h5>
             <p>
                 This Privacy Policy identifies and describes the way Bellefu uses and protects the information we
