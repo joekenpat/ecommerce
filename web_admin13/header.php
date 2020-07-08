@@ -59,13 +59,13 @@ if(isset($_SESSION['admin']['id'])){
     if(isset($config['quickad_secret_file']) && $config['quickad_secret_file'] != ""){
         ?>
         <script>
-            var ajaxurl = '<?php echo $config['site_url']."web_admin/".$config['quickad_secret_file'].'.php'; ?>';
+            var ajaxurl = '<?php echo $config['site_url']."web_admin13/".$config['quickad_secret_file'].'.php'; ?>';
         </script>
     <?php
     }
     ?>
     <script>
-        var sidepanel_ajaxurl = '<?php echo $config['site_url']."web_admin/ajax_sidepanel.php"; ?>';
+        var sidepanel_ajaxurl = '<?php echo $config['site_url']."web_admin13/ajax_sidepanel.php"; ?>';
     </script>
 </head>
 <body class="app-ui layout-has-drawer layout-has-fixed-header">
