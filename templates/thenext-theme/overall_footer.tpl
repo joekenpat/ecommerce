@@ -320,7 +320,7 @@ IF({LOGGED_IN} && '{ZECHAT}'=='on'){
     <div class="f-menu-item ActiveMenu"><a  href="{SITE_URL}home"><i class="fa fa-home" style="font-size: 20px; color:white"></i><div class="name" style="font-size:0.7em;color:white">{LANG_HOME}</div></a></div>
 
     <div class="f-menu-item cart ActiveMenu"><a  href="{SITE_URL}favourite"><i class="fa fa-heart" style="font-size: 18px; color:white"></i><div class="name" style="font-size:0.7em;color:white">{LANG_FAVOURITES}</div></a></div>
-    <div class="f-menu-item ActiveMenu" style=" margin-top:-30px;"><a href="{SITE_URL}post-ad"><img src="/templates/thenext-theme/images/icon2.png"  style="font-size: 50px;color:#04407b; background-color:#76ba1b; color:white;border-radius:50%; padding-left:10px;padding-right:10px;padding-top:10px;"></a></div>
+    <div class="f-menu-item ActiveMenu" style=" margin-top:-30px;"><a href="{SITE_URL}post-ad"><img src="/templates/thenext-theme/images/sticky_ad_post_icon.png"  style="font-size: 50px;color:#04407b; background-color:#76ba1b; color:white;border-radius:50%; padding-left:10px;padding-right:10px;padding-top:10px;"></a></div>
 
     <div class="f-menu-item ActiveMenu"><a  href="{SITE_URL}message"><i class="fa fa-envelope" style="font-size: 18px; color:white"></i><div class="name" style="font-size:0.7em;color:white">{LANG_MESSAGE}</div></a></div>
 
