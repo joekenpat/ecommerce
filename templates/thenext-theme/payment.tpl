@@ -388,6 +388,7 @@
             key: '{PAYSTACK_PUBLIC_KEY}',
             email: '{EMAIL}',
             amount: amount,
+            currency: 'USD',
             metadata: {
                 custom_fields: [
                 {

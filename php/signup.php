@@ -44,6 +44,7 @@ if(isset($_POST["submit"])) {
     $errors = 0;
     $name_error = '';
     $username_error = '';
+    $phone_error = '';
     $email_error = '';
     $password_error = '';
     $recaptcha_error = '';
@@ -98,6 +99,39 @@ if(isset($_POST["submit"])) {
         else {
             $username_error = $lang['USERUAV'];
             $username_error = "<span class='status-available'>".$username_error."</span>";
+        }
+    }
+
+    // Check if this is phone availability check from signup page using ajax
+
+    if(empty($_POST["phone"]))
+    {
+        $errors++;
+        $phone_error = $lang['FIELD_REQ'];
+        $phone_error = "<span class='status-not-available'> ".$phone_error."</span>";
+    }
+    elseif(!is_numeric($_POST['phone']))
+    {
+        $errors++;
+        $phone_error = "Numbers Only";
+        $phone_error = "<span class='status-not-available'> ".$phone_error." [0-9]</span>";
+    }
+    elseif( (strlen($_POST['phone']) < 8) OR (strlen($_POST['phone']) > 16) )
+    {
+        $errors++;
+        $phone_error = $lang['ISINVALID'];
+        $phone_error = "<span class='status-not-available'> ".$phone_error.".</span>";
+    }
+    else{
+        $user_count = check_phone_exists($_POST["phone"]);
+        if($user_count>0) {
+            $errors++;
+            $phone_error = 'Phone Number not available.';
+            $phone_error = "<span class='status-not-available'>".$phone_error."</span>";
+        }
+        else {
+            $phone_error = 'Phone Number is available.';
+            $phone_error = "<span class='status-available'>".$phone_error."</span>";
         }
     }
 
@@ -177,6 +211,7 @@ if(isset($_POST["submit"])) {
         $insert_user->username = $_POST["username"];
         $insert_user->password_hash = $pass_hash;
         $insert_user->email = $_POST['email'];
+        $insert_user->phone = $_POST['phone'];
         $insert_user->confirm = $confirm_id;
         $insert_user->created_at = $now;
         $insert_user->updated_at = $now;
@@ -210,9 +245,11 @@ if(isset($_POST['submit']))
     $page->SetParameter ('NAME_FIELD', $_POST['name']);
     $page->SetParameter ('USERNAME_FIELD', $_POST['username']);
     $page->SetParameter ('EMAIL_FIELD', $_POST['email']);
+    $page->SetParameter ('PHONE_FIELD', $_POST['phone']);
 
     $page->SetParameter ('NAME_ERROR', $name_error);
     $page->SetParameter ('USERNAME_ERROR', $username_error);
+    $page->SetParameter ('PHONE_ERROR',$phone_error);
     $page->SetParameter ('EMAIL_ERROR', $email_error);
     $page->SetParameter ('PASSWORD_ERROR', $password_error);
     $page->SetParameter ('RECAPTCH_ERROR', $recaptcha_error);
@@ -222,13 +259,14 @@ else
     $page->SetParameter ('NAME_FIELD', '');
     $page->SetParameter ('USERNAME_FIELD', '');
     $page->SetParameter ('EMAIL_FIELD', '');
+    $page->SetParameter ('PHONE_FIELD', '');
 
     $page->SetParameter ('NAME_ERROR', '');
     $page->SetParameter ('USERNAME_ERROR', '');
+    $page->SetParameter ('PHONE_ERROR', '');
     $page->SetParameter ('EMAIL_ERROR', '');
     $page->SetParameter ('PASSWORD_ERROR', '');
     $page->SetParameter ('RECAPTCH_ERROR', '');
 }
 $page->SetParameter ('OVERALL_FOOTER', create_footer());
 $page->CreatePageEcho();
-?>

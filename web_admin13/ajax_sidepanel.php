@@ -1848,11 +1848,11 @@ function SaveSettings(){
 
                 $ext = getExtension($bannername);
                 $ext = strtolower($ext);
-                $banner_name = "bg" . '.' . $ext;
+                $banner_name = bin2hex(random_bytes(15)) . '.' . $ext;
                 $newBgname = $uploaddir . $banner_name;
                 //Moving file to uploads folder
                 if(file_exists($newBgname)){
-                    unlink($newBgname);
+                    unlink($uploaddir.get_option('home_baner'));
                 }
                 if (move_uploaded_file($_FILES['banner']['tmp_name'], $newBgname)) {
 

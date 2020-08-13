@@ -30,24 +30,26 @@ function change_user_country($country_code){
 }
 // Function to get the client IP address
 function get_client_ip() {
-
     $ipaddress = '';
-    if (getenv('HTTP_CLIENT_IP'))
-        $ipaddress = getenv('HTTP_CLIENT_IP');
-    else if(getenv('HTTP_X_FORWARDED_FOR'))
-        $ipaddress = getenv('HTTP_X_FORWARDED_FOR');
-    else if(getenv('HTTP_X_FORWARDED'))
-        $ipaddress = getenv('HTTP_X_FORWARDED');
-    else if(getenv('HTTP_FORWARDED_FOR'))
-        $ipaddress = getenv('HTTP_FORWARDED_FOR');
-    else if(getenv('HTTP_FORWARDED'))
-        $ipaddress = getenv('HTTP_FORWARDED');
-    else if(getenv('REMOTE_ADDR'))
-        $ipaddress = getenv('REMOTE_ADDR');
-    else
-        $ipaddress = 'UNKNOWN';
-    // return $ipaddress;
-    return '129.205.112.204';
+    if (isset($_SERVER["HTTP_CF_CONNECTING_IP"])) {
+        $ipaddress = $_SERVER["HTTP_CF_CONNECTING_IP"];
+    }else{
+        if (getenv('HTTP_CLIENT_IP'))
+            $ipaddress = getenv('HTTP_CLIENT_IP');
+        else if(getenv('HTTP_X_FORWARDED_FOR'))
+            $ipaddress = getenv('HTTP_X_FORWARDED_FOR');
+        else if(getenv('HTTP_X_FORWARDED'))
+            $ipaddress = getenv('HTTP_X_FORWARDED');
+        else if(getenv('HTTP_FORWARDED_FOR'))
+            $ipaddress = getenv('HTTP_FORWARDED_FOR');
+        else if(getenv('HTTP_FORWARDED'))
+            $ipaddress = getenv('HTTP_FORWARDED');
+        else if(getenv('REMOTE_ADDR'))
+            $ipaddress = getenv('REMOTE_ADDR');
+        else
+            $ipaddress = 'UNKNOWN';
+    }
+    return $ipaddress;
 }
 
 
@@ -500,6 +502,22 @@ function check_username_exists($username){
 
     $count = ORM::for_table($config['db']['pre'].'user')
         ->where('username', $username)
+        ->count();
+
+    // check row exist
+    if ($count) {
+        return $count;
+    } else {
+        return 0;
+    }
+}
+
+function check_phone_exists($phone){
+
+    global $config;
+
+    $count = ORM::for_table($config['db']['pre'].'user')
+        ->where('phone', $phone)
         ->count();
 
     // check row exist

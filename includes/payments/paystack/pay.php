@@ -9,7 +9,7 @@ if(!checkloggedin()){
 }
 
 if (isset($_SESSION['quickad'][$access_token]['payment_type'])) {
-    $currency = $config['currency_code'];
+    $currency = 'USD';
     $title = $_SESSION['quickad'][$access_token]['name'];
     $amount = $_SESSION['quickad'][$access_token]['amount'];
 

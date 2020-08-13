@@ -204,7 +204,7 @@ if(isset($_SESSION['admin']['id'])){
                 <!-- End drawer navigation -->
 
                 <div class="drawer-footer">
-                    <p class="copyright"><a href="https://app.bellefu.com" target="_blank">bellefu.com &copy;</p>
+                    <p class="copyright"><a href="https://bellefu.com" target="_blank">bellefu.com &copy;</p>
                     <p class="copyright">Version : <?php echo $config['version']; ?></p>
                 </div>
             </div>

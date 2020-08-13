@@ -108,7 +108,7 @@
                                     <div class="submit-field">
                                         <h5>{LANG_PHONE_NO}</h5>
                                         <div class="input-with-icon-left">
-                                            <i class="flag-image"><img src="{SITE_URL}templates/{TPL_NAME}/images/flags/us.png"></i>
+                                            <i class="flag-image"><img src="{SITE_URL}templates/{TPL_NAME}/images/flags/{COUNTRY}.png"></i>
                                             <input type="text" name="phone" class="with-border margin-bottom-0" value="{PHONE}">
                                         </div>
                                     </div>

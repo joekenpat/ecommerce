@@ -37,6 +37,7 @@ if(checkloggedin())
         $page->SetParameter ('ADDRESS', $ses_userdata['address']);
         $page->SetParameter ('CITY', $ses_userdata['city']);
         $page->SetParameter ('COUNTRY', $ses_userdata['country']);
+        $page->SetParameter('COUNTRY_CODE', strtolower(get_client_country_by_ip()));
 
         if(check_user_upgrades($_SESSION['user']['id']))
         {

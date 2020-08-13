@@ -269,6 +269,7 @@ function ajax_edit_advertise(){
                     $_SESSION['quickad'][$access_token]['featured'] = $featured;
                     $_SESSION['quickad'][$access_token]['urgent'] = $urgent;
                     $_SESSION['quickad'][$access_token]['highlight'] = $highlight;
+                    $_SESSION['quickad'][$access_token]['payment_currency'] = 'USD';
                     /*End These details save in session and get on payment sucecess*/
 
                     $url = $link['PAYMENT']."/" . $access_token;

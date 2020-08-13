@@ -29,11 +29,11 @@
             {:IF}
 
             {ELSE}
-            <div class="col-md-5 col-sm-12">
+            {* <div class="col-md-5 col-sm-12">
                 <div class="right-side">
                     <a href="#sign-in-dialog" class="button ripple-effect popup-with-zoom-anim">{LANG_LOGIN_CHAT} <i class="icon-feather-message-circle"></i></a>
                 </div>
-            </div>
+            </div> *}
             {:IF}
         </div>
     </div>
@@ -227,10 +227,9 @@ IF("{SHOW_IMAGE_SLIDER}"=="1"){
                         </div>
                         <div class="job-detail-box-inner" style="padding:2px; text-align:left">
                             <ol>
-                                <li style="font-size:0.8em">Do not pay in advance even for the delivery</li>
-                                <li style="font-size:0.8em">Try to meet at a safe, public location or a market</li>
-                                <li style="font-size:0.8em">Check the item BEFORE you buy it</li>
-                                <li style="font-size:0.8em">Pay only after collecting the item</li>
+                                <li style="font-size:0.8em">Ensure quality/quantity of Products/Services.</li>
+                                <li style="font-size:0.8em">Ensure meeting in a secured place if the need arise.</li>
+                                <li style="font-size:0.8em">Contact support@bellefu.com if you require verification of buyer or seller (Terms & Conditions apply)</li>
                             </ol>
                         </div>
                     </div>
